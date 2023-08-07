@@ -2,7 +2,6 @@ const path = require("path");
 
 module.exports = async (client, discord, interaction) => {
   
- 
   const emb = {
     author: {
       name: "Necesitas permisos",
