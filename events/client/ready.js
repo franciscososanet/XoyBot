@@ -75,7 +75,7 @@ module.exports = async (client) => {
           await newdata.save();
         }
 
-        if(data && data.titulo === `${title.body}`) return;
+        if(data && data.titulo === title) return;
 
         await client.channels.cache.get("1134752606485491812").send({
           content: `${user} está en directo.\nhttps://www.twitch.tv/${user}`,
