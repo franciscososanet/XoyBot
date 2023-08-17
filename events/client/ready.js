@@ -67,13 +67,8 @@ module.exports = async (client) => {
             titulo: title
           });
 
-          await client.channels.cache.get("1134752606485491812").send({
-            content: `**¡Xoy está en directo!**.\nhttps://www.twitch.tv/${user}`,
-            embeds: [embed]
-          });
-
           await newdata.save();
-        }
+        } 
 
         if(data && data.titulo === title) return;
 
