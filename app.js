@@ -1,7 +1,7 @@
 require("dotenv").config();
 
 const discord = require("discord.js");
-const client = new discord.Client({ intents: 32767, partials: ["GUILD_MEMBER", "USER", "CHANNEL", "MESSAGE", "REACTION"] });
+const client = new discord.Client({ intents: 32767, partials: ["GUILD_MEMBER", "GUILD_PRESENCE" ,"USER", "CHANNEL", "MESSAGE", "REACTION"] });
 
 console.log("--------------------- LOGS DEL BOT ---------------------");
 
